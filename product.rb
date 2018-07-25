@@ -2,7 +2,7 @@
 
 class Product
 
-  def initialize(name, base_price, tax_rate )
+  def initialize(name, base_price, tax_rate)
     @name = name
     @base_price = base_price
     @tax_rate = tax_rate
@@ -19,10 +19,9 @@ class Product
   def calculate_total
     price = @base_price
     tax_amount = @tax_rate * @base_price
-    total = price  + tax_amount
+    total = price + tax_amount
     return total
   end
-
 end
 
 # #test
